@@ -65,5 +65,28 @@ public class BeanLearning {
      *
      *
      *
+     * ==============================================================================================================
+     *                                          Dependency Injection
+     *
+     * -> Dependency Injection (DI) in the context of the Spring Framework is a design pattern and
+     *    technique used to achieve loose coupling between components in a software application.
+     *    In a DI scenario, instead of a component creating its dependencies directly, the dependencies are injected
+     *    into the component from an external source, typically managed by a framework like Spring.
+     *
+     * Benefits of Dependency Injection : ===>
+     * 1. Loose Coupling:
+     *          Components are decoupled from their dependencies,making them easier to maintain and test.
+     * 2. Flexible Configuration:
+     *          Dependencies can be configured externally,allowing for easier customization and swapping of components.
+     * 3. Improved Testability:
+     *          Components can be easily mocked or replaced during testing, allowing for more thorough and
+     *           isolated unit tests.
+     *
+     * =============================>  How to Inject Dependencies  <================================================
+     *
+     * 1.Constructor Injection :-
+     *      Dependencies are provided through a class constructor.
+     * 2.Field Injection :-
+     *      Dependencies are provided directly into the fields of a class using @Autowired annotation.
      * */
 }

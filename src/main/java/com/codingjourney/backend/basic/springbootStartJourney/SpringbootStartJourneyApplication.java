@@ -18,10 +18,16 @@ public class SpringbootStartJourneyApplication implements CommandLineRunner {
 	-> have a object as ap, and it is injected whenever it is required.
 	-> '@Autowired' annotation is called as dependency injection.
 	 */
+
+//	@Autowired
+//	AppleProduct ap;
+//
+//	@Autowired
+//	AppleProduct apd;
+
 	@Autowired
-	AppleProduct ap;
-	@Autowired
-	AppleProduct apd;
+	DBService dbService;
+
 	public static void main(String[] args) {
 		SpringApplication.run(SpringbootStartJourneyApplication.class, args);
 
@@ -41,7 +47,9 @@ public class SpringbootStartJourneyApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		ap.displayPhone();
-		apd.displayPhone();
+//		ap.displayPhone();
+//		apd.displayPhone();
+
+		System.out.println(dbService.getData());
 	}
 }
