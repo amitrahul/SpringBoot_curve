@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 /*
 * -> through @Component annotation,
 * -> we have defined 'AppleProduct' class as Beans.
-* -> here we can also use @Service annotation which internally using component annotation.
+* -> here we can also use @Service annotation which internally using @component annotation.
 *
 * */
 
